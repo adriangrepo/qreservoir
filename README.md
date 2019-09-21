@@ -11,7 +11,7 @@ Contains basic structure for wells and log objects that can be used to build upo
 ![image info](./images/cross_plot_data.jpg "cross plot")
 
 ## Cross plot setup
-![image info](./images/cross_plot.jpg "cross plot config")
+![image info](./images/cross_plot.png "cross plot config")
 
 ## .las/ascii import
 ![image info](./images/import.png "import dialog")
