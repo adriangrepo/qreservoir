@@ -1,0 +1,20 @@
+export IMAGE_PATH="/mnt/963GB/Data/Python/Workspaces/PyDev/icons/"
+export TEST_DIR = "/home/a/TestData/"
+export TEST_PROJECT="/tmp/testProject"
+#cova-1
+export WELL_1="/home/a/TestData/Cova_1.las"
+#elk-1
+export WELL2_RHOB = "/home/a/TestData/Interoil_Elk1ST1_RHOB_GasFilled.las"
+export WELL2_FEQL = "/home/a/TestData/Interoil_Elk1ST1_FEQL.las"
+export TEST_WELL = "/home/a/TestData/Test_well.las"
+
+#  public static final String jLogFile = "Elk-1 ST1.JLG";
+#  public static final String jLogFileFilePath = "/home/a";
+
+PLOG_FILE="Elk-1 ST1 (NPOR=APLC).JLG"
+PLOG_FILE_PATH = "/home/a/JLog/Elk-1"
+
+antelope1las = "/home/a/TestData/antelope-1_comp.las"
+wrappedPath = "/home/a/TestData/Wrapped_las_example.las"
+covaWrappedFile = "/home/a/TestData/Cova_1_brief.las"
+elk1las = "/home/a/TestData/Interoil_Elk1ST1_FEQL.las"
