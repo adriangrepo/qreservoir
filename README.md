@@ -1,6 +1,6 @@
 # qreservoir
 
-Petrophysics application build with PyQt4, python3.4.
+Petrophysics application built with PyQt4, python3.4.
 
 Contains basic structure for wells and log objects that can be used to build upon with petrophysics and rock physics logic.
 
@@ -15,5 +15,7 @@ Contains basic structure for wells and log objects that can be used to build upo
 
 ## .las/ascii import
 ![image info](./images/import.png "import dialog")
+
+It's been a while since I have had time to work on this so someone-else may as well put the code to some use.
 
 

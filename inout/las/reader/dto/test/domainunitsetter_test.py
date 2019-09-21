@@ -13,10 +13,8 @@ logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger(__name__)
 
 class DomainUnitSetterTest(unittest.TestCase):
-    """ generated source for class DomainUnitSetterTest """
-    def test_findDepthUnitsMatchTest(self):
-        """ generated source for method findDepthUnitsMatchTest """
 
+    def test_findDepthUnitsMatchTest(self):
         logger.debug(">>test_findDepthUnitsMatchTest()")
         dus = DomainUnitSetter()
         match = str()

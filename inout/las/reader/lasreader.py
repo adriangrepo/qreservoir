@@ -72,7 +72,6 @@ class LasReader(object):
 
 
     def __init__(self):
-        """ generated source for method __init__ """
         #  use this for job process update
         #  could break into more parts is requred
         self.part1_completed = False
@@ -179,7 +178,6 @@ class LasReader(object):
         return True
 
     def readJobPart2(self):
-        """ generated source for method readJobPart2 """
         if self.part1_completed == True:
             assert len(self.validatedRecords)
             self.parseJobLasData(self.validatedRecords)
@@ -188,7 +186,6 @@ class LasReader(object):
         return False
 
     def readJobPart3(self):
-        """ generated source for method readJobPart3 """
         if self.part2_completed == True:
             if self.parseJobRecordListArray():
                 self.part3_completed = True
@@ -243,7 +240,6 @@ class LasReader(object):
     #      * Parse the header records.
     #      
     def parseHeader(self, records):
-        """ generated source for method parseHeader """
         logger.debug(">>parseHeader() records: "+str(len(records)))
         #  Loop thru each of the records.
         #for i in range(len(records)):
@@ -279,7 +275,6 @@ class LasReader(object):
 
 
     def parseVersionBlock(self, records, start):
-        """ generated source for method parseVersionBlock """
         logger.debug(">>parseVersionBlock()")
         index = start+1
         tempIndex = index
@@ -313,7 +308,6 @@ class LasReader(object):
             logger.error("Version block invalid")
 
     def parseWellInformationBlock(self, records, startIndex):
-        """ generated source for method parseWellInformationBlock """
         logger.debug(">>parseWellInformationBlock()")
         index = startIndex + 1
         recordRaw = ""
@@ -491,8 +485,6 @@ class LasReader(object):
         self.setDTOunits()
 
     def setDTOunits(self):
-        """ generated source for method setDTOunits """
-        
         dus = DomainUnitSetter()
         logType = LogType
         depthUnitMatch = dus.findDepthUnitsMatch(str(self.well.file_depth_units), logType.DEPTH)
@@ -501,7 +493,6 @@ class LasReader(object):
         
 
     def parseParameterInformationBlock(self, records, startIndex):
-        """ generated source for method parseParameterInformationBlock """
         logger.debug(">>parseParameterInformationBlock()")
         if startIndex >= len(records):
             logger.info("Parameter information block is empty")
@@ -515,7 +506,6 @@ class LasReader(object):
 
 
     def parseOtherInformationBlock(self, records, startIndex):
-        """ generated source for method parseParameterInformationBlock """
         logger.debug(">>parseOtherInformationBlock()")
         record = ""
         mnemonicName = ""
@@ -535,7 +525,6 @@ class LasReader(object):
                 unit = cols[self.UNIT].strip()
                 
     def parseCurveInformationBlock(self, records, startIndex):
-        """ generated source for method parseCurveInformationBlock """
         logger.debug(">>parseCurveInformationBlock()")
         if startIndex >= len(records):
             logger.info("Curve information block is empty")
@@ -549,7 +538,6 @@ class LasReader(object):
                 self.parseUnitRecord(item)
 
     def parseUnitRecord(self, record):
-        """ generated source for method parseUnitRecord """
         data = self.splitHeaderRecord(record)
         mnem = NamingUtils.createUniqueMnemonic(data[self.MNEM].strip(), self._unitMap)
         
@@ -568,17 +556,14 @@ class LasReader(object):
         self.logList.append(logItem)
 
     def convertType(self, fileMnemonic):
-        """ generated source for method convertType """
         type_ = LogType.findLogTypeFromMnemonic(fileMnemonic).__str__()
         return type_
 
     def convertUnit(self, fileUnit):
-        """ generated source for method convertUnit """
         logUnitsType = LogUnitsType.getLogUnitsType(fileUnit)
         return logUnitsType.__str__()
 
     def parseParameterRecord(self, record):
-        """ generated source for method parseParameterRecord """
         #logger.debug(">>parseParameterRecord()")
         data = self.splitHeaderRecord(record)
         parameter = Parameter()
@@ -596,7 +581,6 @@ class LasReader(object):
 
         
     def parseLasData(self, records):
-        """ generated source for method parseLasData """
         data = None
         mnems = self.getMnemonicNames()
         if self._wrapped:
@@ -616,7 +600,6 @@ class LasReader(object):
             self._data_stop = depth_data[len(depth_data)-1]
 
     def parseJobLasData(self, records):
-        """ generated source for method parseJobLasData """
         self.jobData = None
         mnems = self.getMnemonicNames()
         if self._wrapped:
@@ -632,7 +615,6 @@ class LasReader(object):
 
 
     def parseJobRecordListArray(self):
-        """ generated source for method parseJobRecordListArray """
         if self.jobData:
             self._containsData = True
             logger.debug("--parseJobRecordListArray() len mnem names: "+str(len(self.getMnemonicNames())))
@@ -643,7 +625,6 @@ class LasReader(object):
         return False
 
     def parseNonWrappedDataRecords(self, records, numTraces, firstDataRecord, delimiter, nullValue):
-        """ generated source for method parseNonWrappedDataRecords """
         list_ = []
         data = None
         i = firstDataRecord
@@ -659,7 +640,6 @@ class LasReader(object):
         return list_
 
     def parseRecordListArray(self, data, numTraces):
-        """ generated source for method parseRecordListArray """
         assert data != None
         logs = numpy.empty((numTraces, len(data)))
         logger.debug("--parseRecordListArray() created "+str(numTraces)+" by "+str(len(data))+" matrix ")
@@ -757,7 +737,6 @@ class LasReader(object):
     
     '''
     def parseWrappedDataRecords(self, records, numTraces, firstDataRecord, delimiter, nullValue):
-        """ generated source for method parseWrappedDataRecords """
         result = []
         i = firstDataRecord
         record = [None]*numTraces
@@ -801,7 +780,6 @@ class LasReader(object):
     #TODO check this method
     @classmethod
     def parseDataRecordsByRegex(cls, record, numTraces, delimiter, nullValue):
-        """ generated source for method parseDataRecordsByRegex """
         result = [None]*numTraces
         remainder = record
         end = 0
@@ -854,7 +832,6 @@ class LasReader(object):
             return rounded;
 
     def getMnemonicNames(self):
-        """ generated source for method getMenmonicNames """
         #logger.debug(">>menmonicNames() "+str(len(self._unitMap)))
         #for item in self._unitMap.keys():
         #    logger.debug(str(item))
@@ -862,12 +839,10 @@ class LasReader(object):
 
     @property
     def parameterMenmonicNames(self):
-        """ generated source for method getParameterMenmonicNames """
         return list(self._parameterUnitMap.keys())
 
     @property
     def getExpectedNumberOfSamples(self):
-        """ generated source for method getExpectedNumberOfSamples """
         numSamples = int((1 + round((self._stop - self._start) / self._step)))
         return numSamples
 

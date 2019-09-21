@@ -7,10 +7,8 @@ from statics.types.logtype import LogType
 from statics.types.logunitstype import LogUnitsType
 
 class DomainUnitSetter(object):
-    """ generated source for class DomainUnitSetter """
     #  String depthUnits = well.getWell_depth_units();
     def findDepthUnitsMatch(self, depthUnits, logType):
-        """ generated source for method findDepthUnitsMatch """
         assert isinstance(depthUnits, str), "depthUnits is not a string: %r" % depthUnits
         assert isinstance(logType, LogType), "logType is not a LogType: %r" % logType
 

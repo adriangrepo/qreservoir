@@ -1,7 +1,4 @@
 #!/usr/bin/env python
-""" generated source for module AppSettings """
-
-
 
 from io import IOBase
 import os, platform, subprocess, sys, re
@@ -11,10 +8,7 @@ from os import path
 import loggerpackage
 from qrutilities.systemutils import SystemUtils
 
-
-#in java version was located at statics.project.AppSettings
 class AppSettings(object):
-    """ generated source for class AppSettings """
     developerMode = False
     databaseServerMode = False
     newProjectFirstMainConnection = False
