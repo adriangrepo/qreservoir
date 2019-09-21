@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WellLasWizardPage</class>
+ <widget class="QWizardPage" name="WellLasWizardPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>579</width>
+    <height>831</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Well details</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QGroupBox" name="upperGroupBox">
+     <property name="title">
+      <string/>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QRadioButton" name="newWellRadioButton">
+        <property name="text">
+         <string>New well</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="existingWellRadioButton">
+        <property name="text">
+         <string>Existing well</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="existingWellComboBox"/>
+      </item>
+      <item>
+       <spacer name="upperHorizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="requiredGroupBox">
+     <property name="title">
+      <string/>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="1" column="2">
+       <widget class="QComboBox" name="depthTypeComboBox"/>
+      </item>
+      <item row="3" column="2">
+       <widget class="QLineEdit" name="elevationOfDepthReferenceLineEdit"/>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="elevationOfDepthReferenceLabel">
+        <property name="text">
+         <string>Elevation of depth reference</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0" colspan="2">
+       <widget class="QLabel" name="wellNameLabel">
+        <property name="text">
+         <string>Well name</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QLineEdit" name="wellNameLineEdit"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="depthTypeLabel">
+        <property name="text">
+         <string>Depth type</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0" colspan="2">
+       <widget class="QLabel" name="depthReferenceLabel">
+        <property name="text">
+         <string>Depth reference</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QComboBox" name="depthReferenceComboBox"/>
+      </item>
+      <item row="2" column="3">
+       <widget class="QLabel" name="depthReferenceUnitLabel">
+        <property name="text">
+         <string>Unit</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="4">
+       <widget class="QComboBox" name="depthReferenceUnitComboBox"/>
+      </item>
+      <item row="3" column="3">
+       <widget class="QLabel" name="elevationOfDepthReferenceUnitLabel">
+        <property name="text">
+         <string>Unit</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="4">
+       <widget class="QComboBox" name="elevationOfDepthReferenceUnitComboBox"/>
+      </item>
+      <item row="4" column="0">
+       <widget class="QRadioButton" name="importOnlyRequiredDataRadioButton">
+        <property name="text">
+         <string>Import only required data</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="3">
+       <widget class="QLabel" name="depthTypeUnitLabel">
+        <property name="text">
+         <string>Unit</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="4">
+       <widget class="QComboBox" name="depthTypeUnitComboBox"/>
+      </item>
+      <item row="4" column="2">
+       <widget class="QRadioButton" name="importAllDataRadioButton">
+        <property name="text">
+         <string>Import all header and parameter data</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>565</width>
+        <height>589</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="12" column="6">
+        <widget class="QComboBox" name="waterDepthUnitComboBox"/>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="licenseLabel">
+         <property name="text">
+          <string>License</string>
+         </property>
+        </widget>
+       </item>
+       <item row="17" column="0">
+        <widget class="QLabel" name="glElevationLabel">
+         <property name="text">
+          <string>GL elevation</string>
+         </property>
+        </widget>
+       </item>
+       <item row="12" column="0">
+        <widget class="QLabel" name="waterDepthLabel">
+         <property name="text">
+          <string>Water depth</string>
+         </property>
+        </widget>
+       </item>
+       <item row="12" column="3">
+        <widget class="QLabel" name="waterDepthUnitLabel">
+         <property name="text">
+          <string>Unit</string>
+         </property>
+        </widget>
+       </item>
+       <item row="17" column="3">
+        <widget class="QLabel" name="glElevationUnitLabel">
+         <property name="text">
+          <string>Unit</string>
+         </property>
+        </widget>
+       </item>
+       <item row="14" column="1">
+        <widget class="QComboBox" name="drillingReferenceComboBox"/>
+       </item>
+       <item row="0" column="1" colspan="2">
+        <widget class="QLineEdit" name="areaLineEdit"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="blockLabel">
+         <property name="text">
+          <string>Block</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="5" colspan="3">
+        <widget class="QLineEdit" name="apiLineEdit"/>
+       </item>
+       <item row="1" column="1" colspan="2">
+        <widget class="QLineEdit" name="blockLineEdit"/>
+       </item>
+       <item row="1" column="3">
+        <widget class="QLabel" name="companyLabel">
+         <property name="text">
+          <string>Company</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="5" colspan="3">
+        <widget class="QLineEdit" name="companyLineEdit"/>
+       </item>
+       <item row="8" column="0" colspan="4">
+        <widget class="Line" name="line">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="areaLabel">
+         <property name="text">
+          <string>Area</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="completionStatusLabel">
+         <property name="text">
+          <string>Completion status</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="completionStatusLineEdit"/>
+       </item>
+       <item row="2" column="3">
+        <widget class="QLabel" name="countryLabel">
+         <property name="text">
+          <string>Country</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="6">
+        <widget class="QLineEdit" name="countryLineEdit"/>
+       </item>
+       <item row="0" column="3">
+        <widget class="QLabel" name="apiLabel">
+         <property name="text">
+          <string>API</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLineEdit" name="countyLineEdit"/>
+       </item>
+       <item row="3" column="3">
+        <widget class="QLabel" name="fieldLabel">
+         <property name="text">
+          <string>Field</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="countyLabel">
+         <property name="text">
+          <string>County</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="6">
+        <widget class="QLineEdit" name="fieldLineEdit"/>
+       </item>
+       <item row="9" column="0">
+        <widget class="QLabel" name="drillingContractorLabel">
+         <property name="text">
+          <string>Drilling contractor</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="3">
+        <widget class="QLabel" name="locationLabel">
+         <property name="text">
+          <string>Location</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QLineEdit" name="licenseLineEdit"/>
+       </item>
+       <item row="12" column="1">
+        <widget class="QLineEdit" name="waterDepthLineEdit"/>
+       </item>
+       <item row="9" column="6">
+        <widget class="QLineEdit" name="rigNameLineEdit"/>
+       </item>
+       <item row="10" column="0">
+        <widget class="QLabel" name="spudDateLabel">
+         <property name="text">
+          <string>Spud date</string>
+         </property>
+        </widget>
+       </item>
+       <item row="15" column="6">
+        <widget class="QComboBox" name="dfElevationUnitComboBox"/>
+       </item>
+       <item row="6" column="6">
+        <widget class="QLineEdit" name="provinceLineEdit"/>
+       </item>
+       <item row="4" column="6">
+        <widget class="QLineEdit" name="locationLineEdit"/>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="operatorLabel">
+         <property name="text">
+          <string>Operator</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="3">
+        <widget class="QLabel" name="provinceLabel">
+         <property name="text">
+          <string>Province</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="QLineEdit" name="operatorLineEdit"/>
+       </item>
+       <item row="15" column="3">
+        <widget class="QLabel" name="dfElevationUnitLabel">
+         <property name="text">
+          <string>Unit</string>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="1">
+        <widget class="QLineEdit" name="drillingContractorLineEdit"/>
+       </item>
+       <item row="7" column="0">
+        <widget class="QLabel" name="stateLabel">
+         <property name="text">
+          <string>State</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="1">
+        <widget class="QLineEdit" name="stateLineEdit"/>
+       </item>
+       <item row="20" column="0">
+        <widget class="QLabel" name="elevationAbovePDLabel">
+         <property name="toolTip">
+          <string>Elevation above permanent datum</string>
+         </property>
+         <property name="text">
+          <string>Elevation above PD</string>
+         </property>
+        </widget>
+       </item>
+       <item row="18" column="0">
+        <widget class="QLabel" name="geodeticDatumLabel">
+         <property name="text">
+          <string>Geodetic datum</string>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="3">
+        <widget class="QLabel" name="rigNameLabel">
+         <property name="text">
+          <string>Rig name</string>
+         </property>
+        </widget>
+       </item>
+       <item row="10" column="1">
+        <widget class="QLineEdit" name="spudDateLineEdit"/>
+       </item>
+       <item row="10" column="3">
+        <widget class="QLabel" name="tdDateLabel">
+         <property name="text">
+          <string>TD date</string>
+         </property>
+        </widget>
+       </item>
+       <item row="14" column="0">
+        <widget class="QLabel" name="drillingReserenceLabel">
+         <property name="text">
+          <string>Drilling reference</string>
+         </property>
+        </widget>
+       </item>
+       <item row="10" column="6">
+        <widget class="QLineEdit" name="tdDateLineEdit"/>
+       </item>
+       <item row="11" column="0">
+        <widget class="QLabel" name="tdDrillerLabel">
+         <property name="text">
+          <string>TD driller</string>
+         </property>
+        </widget>
+       </item>
+       <item row="11" column="3">
+        <widget class="QLabel" name="tdDrillerUnitLabel">
+         <property name="text">
+          <string>Unit</string>
+         </property>
+        </widget>
+       </item>
+       <item row="17" column="6">
+        <widget class="QComboBox" name="glElevationComboBox"/>
+       </item>
+       <item row="7" column="3">
+        <widget class="QLabel" name="uwiLabel">
+         <property name="text">
+          <string>UWI</string>
+         </property>
+        </widget>
+       </item>
+       <item row="11" column="1">
+        <widget class="QLineEdit" name="tdDrillerLineEdit"/>
+       </item>
+       <item row="11" column="6">
+        <widget class="QComboBox" name="tdDrillerUnitComboBox"/>
+       </item>
+       <item row="16" column="0">
+        <widget class="QLabel" name="kbElevationLabel">
+         <property name="text">
+          <string>KB elevation</string>
+         </property>
+        </widget>
+       </item>
+       <item row="16" column="3">
+        <widget class="QLabel" name="kbElevationUnitLabel">
+         <property name="text">
+          <string>Unit</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="6">
+        <widget class="QLineEdit" name="uwiLineEdit"/>
+       </item>
+       <item row="15" column="1">
+        <widget class="QLineEdit" name="dfElevationLineEdit"/>
+       </item>
+       <item row="15" column="0">
+        <widget class="QLabel" name="dfElevationLabel">
+         <property name="text">
+          <string>DF elevation</string>
+         </property>
+        </widget>
+       </item>
+       <item row="19" column="3">
+        <widget class="QLabel" name="permanentDatumElevationUnitLabel">
+         <property name="text">
+          <string>Unit</string>
+         </property>
+        </widget>
+       </item>
+       <item row="18" column="6">
+        <widget class="QLineEdit" name="permanentDatumLineEdit"/>
+       </item>
+       <item row="18" column="3">
+        <widget class="QLabel" name="permanentDatumLabel">
+         <property name="text">
+          <string>Permanent datum</string>
+         </property>
+        </widget>
+       </item>
+       <item row="16" column="6">
+        <widget class="QComboBox" name="kbElevationUnitComboBox"/>
+       </item>
+       <item row="16" column="1">
+        <widget class="QLineEdit" name="kbElevationLineEdit"/>
+       </item>
+       <item row="17" column="1">
+        <widget class="QLineEdit" name="glElevationLineEdit"/>
+       </item>
+       <item row="18" column="1">
+        <widget class="QLineEdit" name="geodeticDatumLineEdit"/>
+       </item>
+       <item row="19" column="1">
+        <widget class="QLineEdit" name="permanentDatumElevationLineEdit"/>
+       </item>
+       <item row="19" column="0">
+        <widget class="QLabel" name="permanentDatumElevationLabel">
+         <property name="text">
+          <string>Permanent datum elevation</string>
+         </property>
+        </widget>
+       </item>
+       <item row="20" column="6">
+        <widget class="QComboBox" name="elevationAbovePDComboBox"/>
+       </item>
+       <item row="20" column="3">
+        <widget class="QLabel" name="elevationAbovePDUnitLabel">
+         <property name="text">
+          <string>Unit</string>
+         </property>
+        </widget>
+       </item>
+       <item row="22" column="0">
+        <widget class="QLabel" name="utmZoneLabel">
+         <property name="text">
+          <string>UTM zone</string>
+         </property>
+        </widget>
+       </item>
+       <item row="21" column="1">
+        <widget class="QLineEdit" name="latitudeLineEdit"/>
+       </item>
+       <item row="21" column="3">
+        <widget class="QLabel" name="longitudeLabel">
+         <property name="text">
+          <string>Longitude</string>
+         </property>
+        </widget>
+       </item>
+       <item row="21" column="6">
+        <widget class="QLineEdit" name="longitudeLineEdit"/>
+       </item>
+       <item row="22" column="1">
+        <widget class="QLineEdit" name="utmZoneLineEdit"/>
+       </item>
+       <item row="22" column="3">
+        <widget class="QLabel" name="horizontalCoordinateSystemLabel">
+         <property name="text">
+          <string>Horizontal coordinate system</string>
+         </property>
+        </widget>
+       </item>
+       <item row="22" column="6">
+        <widget class="QLineEdit" name="horizontalCoordinateSystemLineEdit"/>
+       </item>
+       <item row="21" column="0">
+        <widget class="QLabel" name="latitudeLabel">
+         <property name="text">
+          <string>Latitude</string>
+         </property>
+        </widget>
+       </item>
+       <item row="20" column="1">
+        <widget class="QLineEdit" name="elevationAbovePDLineEdit"/>
+       </item>
+       <item row="23" column="0">
+        <widget class="QLabel" name="xCoordinateLabel">
+         <property name="text">
+          <string>X coordinate</string>
+         </property>
+        </widget>
+       </item>
+       <item row="23" column="1">
+        <widget class="QLineEdit" name="xCoordinateLineEdit"/>
+       </item>
+       <item row="23" column="3">
+        <widget class="QLabel" name="yCoordinateLabel">
+         <property name="text">
+          <string>Y coordinate</string>
+         </property>
+        </widget>
+       </item>
+       <item row="23" column="6">
+        <widget class="QLineEdit" name="yCoordinateLineEdit"/>
+       </item>
+       <item row="13" column="0" colspan="5">
+        <widget class="Line" name="line_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="19" column="6">
+        <widget class="QComboBox" name="permDatumElevUnitComboBox"/>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="lowerGroupbox">
+     <property name="title">
+      <string/>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QPushButton" name="viewfilePushButton">
+        <property name="text">
+         <string>View file </string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="lowerHorizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

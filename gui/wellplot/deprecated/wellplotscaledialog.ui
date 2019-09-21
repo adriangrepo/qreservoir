@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>340</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QDialogButtonBox" name="buttonBox">
+   <property name="geometry">
+    <rect>
+     <x>4</x>
+     <y>311</y>
+     <width>156</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>4</x>
+     <y>248</y>
+     <width>354</width>
+     <height>59</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="2">
+     <widget class="QLineEdit" name="verticalSpacingLineEdit"/>
+    </item>
+    <item row="0" column="1">
+     <widget class="QRadioButton" name="verticalSpacingRadioButton">
+      <property name="text">
+       <string>Vertical spacing</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="3">
+     <widget class="QLabel" name="verticalSpacingUnitsLabel">
+      <property name="text">
+       <string>Units</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="4">
+     <widget class="QComboBox" name="verticalSpacingUnitsComboBox"/>
+    </item>
+    <item row="1" column="1">
+     <widget class="QRadioButton" name="scaleRadioButton">
+      <property name="text">
+       <string>Scale</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="QLineEdit" name="scaleLineEdit">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="widget_2" native="true">
+   <property name="geometry">
+    <rect>
+     <x>4</x>
+     <y>186</y>
+     <width>248</width>
+     <height>58</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_3">
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="displayStopLineEdit">
+      <property name="toolTip">
+       <string>Specify stop data value to display</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="displayStartLabel">
+      <property name="text">
+       <string>All tracks display start</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="displayStopLabel">
+      <property name="text">
+       <string>All tracks display stop</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="displayStartLineEdit">
+      <property name="toolTip">
+       <string>Specify start data value to display</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="widget_3" native="true">
+   <property name="geometry">
+    <rect>
+     <x>4</x>
+     <y>103</y>
+     <width>165</width>
+     <height>79</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_4">
+    <item row="0" column="0">
+     <widget class="QRadioButton" name="dataStartToStopRadioButton">
+      <property name="toolTip">
+       <string>Scales plot range from data start to data stop</string>
+      </property>
+      <property name="text">
+       <string>Data start to data stop</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QRadioButton" name="zeroToDataStopLineEdit">
+      <property name="toolTip">
+       <string>Scales plot range from zero to data stop</string>
+      </property>
+      <property name="text">
+       <string>Zero to data stop</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QRadioButton" name="sepcityDisplayRangeRadioButton">
+      <property name="text">
+       <string>Set data range</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QGroupBox" name="primaryMeasurementGroupBox">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>331</width>
+     <height>95</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Primary measurement type</string>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QWidget" name="primaryMeasurementWidget" native="true">
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="2" column="0">
+        <widget class="QLabel" name="datumLabel">
+         <property name="text">
+          <string>Datum</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0" colspan="2">
+        <widget class="QLabel" name="measurementTypeLabel">
+         <property name="text">
+          <string>Type</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QLineEdit" name="measurementTypeLineEdit">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="toolTip">
+          <string>Data measurement type (eg MDKB (ft))</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QLabel" name="measurementTypeUnitsLabel">
+         <property name="text">
+          <string>Units</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="4">
+        <widget class="QLineEdit" name="measurementTypeUnitsLineEdit">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="toolTip">
+          <string>Data units</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <widget class="QLineEdit" name="datumLineEdit"/>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>Dialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>Dialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

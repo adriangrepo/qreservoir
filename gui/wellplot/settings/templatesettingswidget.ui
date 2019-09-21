@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TemplateSettingsWidget</class>
+ <widget class="QWidget" name="TemplateSettingsWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>861</width>
+    <height>550</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="tabShape">
+      <enum>QTabWidget::Rounded</enum>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="itemTab">
+      <property name="toolTip">
+       <string>Summary details for object</string>
+      </property>
+      <attribute name="title">
+       <string>Item</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="detailsTabLayout"/>
+     </widget>
+     <widget class="QWidget" name="layoutTab">
+      <attribute name="title">
+       <string>Layout</string>
+      </attribute>
+      <layout class="QHBoxLayout" name="horizontalLayout_6">
+       <item>
+        <widget class="QTabWidget" name="layoutTabWidget">
+         <property name="toolTip">
+          <string>Track layout settings</string>
+         </property>
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <widget class="QWidget" name="tracksLayoutTab">
+          <attribute name="title">
+           <string>Tracks</string>
+          </attribute>
+         </widget>
+         <widget class="QWidget" name="overviewLayoutTab">
+          <attribute name="title">
+           <string>Overview</string>
+          </attribute>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="styleTab">
+      <attribute name="title">
+       <string>Style</string>
+      </attribute>
+      <layout class="QHBoxLayout" name="horizontalLayout_18">
+       <item>
+        <widget class="QTabWidget" name="styleTabWidget">
+         <property name="currentIndex">
+          <number>2</number>
+         </property>
+         <widget class="QWidget" name="wellPlotStyleTab">
+          <attribute name="title">
+           <string>Well plot style</string>
+          </attribute>
+         </widget>
+         <widget class="QWidget" name="trackStyleTab">
+          <attribute name="title">
+           <string>Track style</string>
+          </attribute>
+         </widget>
+         <widget class="QWidget" name="curveStyleTab">
+          <attribute name="title">
+           <string>Curve style</string>
+          </attribute>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="scaleTab">
+      <attribute name="title">
+       <string>Scale</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_7">
+       <item>
+        <widget class="QWidget" name="tracksRangePlaceholderWidget" native="true"/>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="overviewGroupBox">
+         <property name="title">
+          <string>Overview</string>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="tracksGroupBox">
+         <property name="title">
+          <string>Tracks</string>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>303</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Apply|QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

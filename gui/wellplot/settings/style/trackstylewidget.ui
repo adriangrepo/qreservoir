@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TrackStyleWidget</class>
+ <widget class="QWidget" name="TrackStyleWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>329</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QScrollArea" name="trackScrollArea">
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="trackScrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>471</width>
+        <height>84</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_15">
+       <item>
+        <widget class="QTableWidget" name="trackTableWidget"/>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTabWidget" name="trackNGridTabWidget">
+     <property name="currentIndex">
+      <number>1</number>
+     </property>
+     <widget class="QWidget" name="trackSizeTab">
+      <attribute name="title">
+       <string>Track size</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="QGroupBox" name="trackGroupBox">
+         <property name="title">
+          <string/>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_10">
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <item row="2" column="0">
+           <widget class="QLabel" name="trackWidthLabel">
+            <property name="text">
+             <string>Track width</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="trackGapLabel">
+            <property name="text">
+             <string>Track gap</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="2">
+           <widget class="QLineEdit" name="trackWidthLineEdit"/>
+          </item>
+          <item row="3" column="2">
+           <widget class="QLineEdit" name="trackGapLineEdit"/>
+          </item>
+          <item row="2" column="1">
+           <spacer name="trackHorizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>266</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item row="1" column="0">
+           <widget class="QCheckBox" name="trackApplyAllCheckBox">
+            <property name="text">
+             <string>Apply to all tacks</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="4">
+           <widget class="QComboBox" name="trackGapUnitsComboBox"/>
+          </item>
+          <item row="2" column="4">
+           <widget class="QComboBox" name="trackWidthUnitsComboBox"/>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="gridTab">
+      <attribute name="title">
+       <string>Grid style</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QCheckBox" name="applyGridToAllCheckBox">
+         <property name="text">
+          <string>Apply to all tracks</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="widget_3" native="true">
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QGroupBox" name="griidGroupBox">
+            <property name="title">
+             <string/>
+            </property>
+            <property name="flat">
+             <bool>true</bool>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_6">
+             <item row="4" column="2">
+              <widget class="QComboBox" name="gridLineStyleComboBox"/>
+             </item>
+             <item row="1" column="0" rowspan="2">
+              <widget class="QLabel" name="gridColourLabel">
+               <property name="text">
+                <string>Grid colour</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="2" rowspan="2">
+              <widget class="QSpinBox" name="gridOpacitySpinBox"/>
+             </item>
+             <item row="3" column="0">
+              <widget class="QLabel" name="gridOpacityLabel">
+               <property name="text">
+                <string>Grid opacity</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="2">
+              <widget class="QPushButton" name="gridColorPushButton">
+               <property name="text">
+                <string/>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <spacer name="horizontalSpacer_3">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item row="4" column="0">
+              <widget class="QLabel" name="gridLineStyleLabel">
+               <property name="text">
+                <string>Grid line style</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QCheckBox" name="gridDisplayedCheckBox">
+               <property name="text">
+                <string>Show grid</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="gridLogLinearGroupBox">
+            <property name="title">
+             <string/>
+            </property>
+            <property name="flat">
+             <bool>true</bool>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_5">
+             <item>
+              <widget class="QLabel" name="lineaGridDivisionsLabel">
+               <property name="text">
+                <string>Linear grid vertical divisions</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSpinBox" name="linearGridVerticalDivisionsSpinBox"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="logarithmicGridVerticalDivisionsLabel">
+               <property name="text">
+                <string>Logathmic grid vertical divisions</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QWidget" name="widget_2" native="true">
+               <layout class="QHBoxLayout" name="horizontalLayout_4">
+                <item>
+                 <widget class="QSpinBox" name="logarithmicGridVerticalDivisionsSpinBox"/>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

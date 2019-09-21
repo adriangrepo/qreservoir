@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TracksScaleWidget</class>
+ <widget class="QWidget" name="TracksScaleWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>401</width>
+    <height>67</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QWidget" name="widget_7" native="true">
+     <layout class="QGridLayout" name="gridLayout_11">
+      <item row="0" column="1">
+       <widget class="QRadioButton" name="verticalSpacingRadioButton">
+        <property name="text">
+         <string>Vertical spacing</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QLabel" name="verticalSpacingUnitsLabel">
+        <property name="text">
+         <string>Units</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QLineEdit" name="verticalSpacingLineEdit"/>
+      </item>
+      <item row="0" column="4">
+       <widget class="QComboBox" name="verticalSpacingUnitsComboBox">
+        <property name="toolTip">
+         <string>Screen units per well unit</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QRadioButton" name="scaleRadioButton">
+        <property name="text">
+         <string>Scale</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLineEdit" name="scaleLineEdit">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,13 @@
+
+petrophysics/
+plot/
+RemoteSystemsTempFiles/
+statics/
+totaldepth/
+.metadata.tar.gz
+.project
+.pydevproject
+logfile.log
+logging_old.conf
+parser.out
+parsetab.out

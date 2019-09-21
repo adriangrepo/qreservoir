@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LogServiceLasWizardPage</class>
+ <widget class="QWizardPage" name="LogServiceLasWizardPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>574</width>
+    <height>588</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Log service details</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QGroupBox" name="upperGroupBox">
+     <property name="title">
+      <string/>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QRadioButton" name="newLogSetRadioButton">
+        <property name="text">
+         <string>New log set</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="newLogSetNameLineEdit"/>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="existingLogSetRadioButton">
+        <property name="text">
+         <string>Existing log set</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="existingLogSetComboBox"/>
+      </item>
+      <item>
+       <spacer name="upperHorizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>560</width>
+        <height>492</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="4" column="0">
+        <widget class="QLabel" name="logStepLabel">
+         <property name="text">
+          <string>Log step</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1" colspan="2">
+        <widget class="QLineEdit" name="analysisByLineEdit"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="defaultRwLabel">
+         <property name="text">
+          <string>Default Rw</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="4" colspan="3">
+        <widget class="QLineEdit" name="analysisLocationLineEdit"/>
+       </item>
+       <item row="1" column="1" colspan="2">
+        <widget class="QLineEdit" name="defaultRwLineEdit"/>
+       </item>
+       <item row="1" column="3">
+        <widget class="QLabel" name="defaultRwUnitLabel">
+         <property name="text">
+          <string>Unit</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="analysisByLabel">
+         <property name="text">
+          <string>Analysis by</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="defaultRwtLabel">
+         <property name="text">
+          <string>Default Rwt</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="defaultRwtLineEdit"/>
+       </item>
+       <item row="2" column="3">
+        <widget class="QLabel" name="defaultRwtUnitLabel">
+         <property name="text">
+          <string>Unit</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QLabel" name="analysisLocationLabel">
+         <property name="text">
+          <string>Analysis location</string>
+         </property>
+        </widget>
+       </item>
+       <item row="11" column="0">
+        <widget class="QLabel" name="tdLoggerLabel">
+         <property name="text">
+          <string>TD logger</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QLineEdit" name="logStartLineEdit"/>
+       </item>
+       <item row="3" column="3">
+        <widget class="QLabel" name="logStartUnitLabel">
+         <property name="text">
+          <string>Unit</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="logStartLabel">
+         <property name="text">
+          <string>Log start</string>
+         </property>
+        </widget>
+       </item>
+       <item row="11" column="5">
+        <widget class="QComboBox" name="tdLoggerUnitComboBox"/>
+       </item>
+       <item row="8" column="0">
+        <widget class="QLabel" name="loggingReferenceLabel">
+         <property name="text">
+          <string>Logging reference</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="3">
+        <widget class="QLabel" name="logStepUnitLabel">
+         <property name="text">
+          <string>Unit</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QLineEdit" name="logStepLineEdit"/>
+       </item>
+       <item row="8" column="5">
+        <widget class="QLineEdit" name="nullValueLineEdit"/>
+       </item>
+       <item row="9" column="0">
+        <widget class="QLabel" name="runNumberLabel">
+         <property name="text">
+          <string>Run number</string>
+         </property>
+        </widget>
+       </item>
+       <item row="13" column="5">
+        <widget class="QComboBox" name="depthDomainComboBox"/>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="logStopLabel">
+         <property name="text">
+          <string>Log stop</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="3">
+        <widget class="QLabel" name="logStopUnitLabel">
+         <property name="text">
+          <string>Unit</string>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="QLineEdit" name="logStopLineEdit"/>
+       </item>
+       <item row="13" column="3">
+        <widget class="QLabel" name="depthDomainLabel">
+         <property name="text">
+          <string>Depth domain</string>
+         </property>
+        </widget>
+       </item>
+       <item row="8" column="1">
+        <widget class="QLineEdit" name="loggingReferenceLineEdit"/>
+       </item>
+       <item row="8" column="3">
+        <widget class="QLabel" name="nullValueLabel">
+         <property name="text">
+          <string>Null value</string>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="1">
+        <widget class="QLineEdit" name="runNumberLineEdit"/>
+       </item>
+       <item row="9" column="3">
+        <widget class="QLabel" name="serviceCompanyLabel">
+         <property name="text">
+          <string>Service company</string>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="5">
+        <widget class="QLineEdit" name="serviceCompanyLineEdit"/>
+       </item>
+       <item row="10" column="0">
+        <widget class="QLabel" name="serviceDateLabel">
+         <property name="text">
+          <string>Service date</string>
+         </property>
+        </widget>
+       </item>
+       <item row="10" column="1">
+        <widget class="QLineEdit" name="serviceDateLineEdit"/>
+       </item>
+       <item row="13" column="1">
+        <widget class="QLineEdit" name="depthTypeLineEdit"/>
+       </item>
+       <item row="13" column="0">
+        <widget class="QLabel" name="depthTypeLabel_2">
+         <property name="text">
+          <string>Depth type</string>
+         </property>
+        </widget>
+       </item>
+       <item row="11" column="1">
+        <widget class="QLineEdit" name="tdLoggerLineEdit"/>
+       </item>
+       <item row="11" column="3">
+        <widget class="QLabel" name="tdLoggerUnitLabel">
+         <property name="text">
+          <string>Unit</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="5">
+        <widget class="QComboBox" name="defaultRwUnitComboBox"/>
+       </item>
+       <item row="2" column="5">
+        <widget class="QComboBox" name="defaultRwtComboBox"/>
+       </item>
+       <item row="3" column="5">
+        <widget class="QComboBox" name="logStartUnitComboBox"/>
+       </item>
+       <item row="4" column="5">
+        <widget class="QComboBox" name="logStepUnitComboBox"/>
+       </item>
+       <item row="6" column="5">
+        <widget class="QComboBox" name="logStopUnitComboBox"/>
+       </item>
+       <item row="12" column="5">
+        <widget class="QLineEdit" name="typeOfFluidInHoleLineEdit"/>
+       </item>
+       <item row="12" column="3">
+        <widget class="QLabel" name="typeOfFluidInHoleLabel">
+         <property name="text">
+          <string>Type of fluid in hole</string>
+         </property>
+        </widget>
+       </item>
+       <item row="12" column="1">
+        <widget class="QLineEdit" name="totalSamplesLineEdit"/>
+       </item>
+       <item row="12" column="0">
+        <widget class="QLabel" name="totalSamplesLabel">
+         <property name="text">
+          <string>Total samples</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="lowerGroupbox">
+     <property name="title">
+      <string/>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QPushButton" name="viewfilePushButton">
+        <property name="text">
+         <string>View file </string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="lowerHorizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

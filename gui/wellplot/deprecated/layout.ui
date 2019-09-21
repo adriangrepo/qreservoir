@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>747</width>
+    <height>534</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_3">
+   <item>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="tabShape">
+      <enum>QTabWidget::Rounded</enum>
+     </property>
+     <property name="currentIndex">
+      <number>1</number>
+     </property>
+     <widget class="QWidget" name="dataSelectionTab">
+      <attribute name="title">
+       <string>Data checkboxes</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_6">
+       <item>
+        <widget class="QScrollArea" name="scrollArea">
+         <property name="widgetResizable">
+          <bool>true</bool>
+         </property>
+         <widget class="QWidget" name="scrollAreaWidgetContents">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>717</width>
+            <height>322</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_4">
+           <item>
+            <layout class="QVBoxLayout" name="checkTabVerticalLayout">
+             <item>
+              <widget class="QLabel" name="checkTabTableLabel">
+               <property name="text">
+                <string>Select logs to display in track numbers</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QTableWidget" name="chkboxTableWidget"/>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QGroupBox" name="selectionGroupBox">
+           <property name="title">
+            <string>Data selection</string>
+           </property>
+           <property name="flat">
+            <bool>false</bool>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout">
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QRadioButton" name="selectDefaultRadioButton">
+              <property name="toolTip">
+               <string>Default log types to plot can be set in preferences</string>
+              </property>
+              <property name="text">
+               <string>Select default</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="selectActiveRadioButton">
+              <property name="toolTip">
+               <string>Plot active logs</string>
+              </property>
+              <property name="text">
+               <string>Select active</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="selectAllRadioButton">
+              <property name="text">
+               <string>Select all</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="selectNoneRadioButton">
+              <property name="text">
+               <string>Select none</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="miscGroupBox">
+           <property name="title">
+            <string/>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_5">
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QPushButton" name="addTrackPushButton">
+              <property name="text">
+               <string>Add track</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="styleTab">
+      <attribute name="title">
+       <string>Style</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_7">
+       <item>
+        <widget class="QTabWidget" name="styleTabWidget">
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <widget class="QWidget" name="plotStyleTab">
+          <attribute name="title">
+           <string>Plot style</string>
+          </attribute>
+          <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <item>
+            <widget class="QScrollArea" name="plotScrollArea">
+             <property name="widgetResizable">
+              <bool>true</bool>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+             </property>
+             <widget class="QWidget" name="plotScrollAreaWidgetContents">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>686</width>
+                <height>497</height>
+               </rect>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_10">
+               <item>
+                <widget class="QGroupBox" name="plotStyleGroupBox">
+                 <property name="title">
+                  <string>Plot</string>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_3">
+                  <property name="topMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>0</number>
+                  </property>
+                  <item row="0" column="0">
+                   <widget class="QCheckBox" name="plotTitleOnCheckBox">
+                    <property name="text">
+                     <string>Plot title displayed</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="QLabel" name="plotTitleLabel">
+                    <property name="text">
+                     <string>Plot title</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="1">
+                   <widget class="QLineEdit" name="plotTitleLineEdit"/>
+                  </item>
+                  <item row="2" column="0">
+                   <widget class="QLabel" name="plotDpiLabel">
+                    <property name="text">
+                     <string>Print DPI</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="1">
+                   <widget class="QLineEdit" name="plotPrintDPILineEdit"/>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QGroupBox" name="trackGroupBox">
+                 <property name="title">
+                  <string>Track</string>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_5">
+                  <property name="topMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>0</number>
+                  </property>
+                  <item row="0" column="3">
+                   <widget class="QSpinBox" name="trackBackgroundOpacitySpinBox"/>
+                  </item>
+                  <item row="0" column="2">
+                   <widget class="QLabel" name="trackBackgroundOpacityLabel">
+                    <property name="text">
+                     <string>Track background opacity</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QPushButton" name="trackBackgroundColorPushButton">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="0">
+                   <widget class="QLabel" name="trackBackgroundColorLabel">
+                    <property name="text">
+                     <string>Track background colour</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QGroupBox" name="gridGroupBox">
+                 <property name="title">
+                  <string>Grid</string>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout">
+                  <property name="topMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>0</number>
+                  </property>
+                  <item row="0" column="0">
+                   <widget class="QCheckBox" name="gridOnCheckBox">
+                    <property name="text">
+                     <string>Grid displayed</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="QLabel" name="gridColorLabel">
+                    <property name="text">
+                     <string>Grid colour</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="1">
+                   <widget class="QPushButton" name="gridColorPushButton">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="0">
+                   <widget class="QLabel" name="gridOpacityLabel">
+                    <property name="text">
+                     <string>Grid opacity</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="1">
+                   <widget class="QSpinBox" name="gridOpacitySpinBox"/>
+                  </item>
+                  <item row="3" column="0">
+                   <widget class="QLabel" name="gridStyleLabel">
+                    <property name="text">
+                     <string>Grid line style</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="1">
+                   <widget class="QComboBox" name="gridStyleComboBox"/>
+                  </item>
+                  <item row="4" column="0">
+                   <widget class="QLabel" name="gridVerticalDivLabel">
+                    <property name="toolTip">
+                     <string>Number of vertical divisions for linear axis plots</string>
+                    </property>
+                    <property name="text">
+                     <string>Vertical divisions</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="1">
+                   <widget class="QSpinBox" name="gridVerticalDivSpinBox"/>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QGroupBox" name="labelGroupBox">
+                 <property name="title">
+                  <string>Label</string>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_4">
+                  <property name="topMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>0</number>
+                  </property>
+                  <item row="0" column="0">
+                   <widget class="QCheckBox" name="labelsExpandedCheckBox">
+                    <property name="toolTip">
+                     <string>Vertically expanded labels (better for long log names)</string>
+                    </property>
+                    <property name="text">
+                     <string>Expanded labels</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="QLabel" name="labelBackgroundColorLabel">
+                    <property name="text">
+                     <string>Background colour</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="1">
+                   <widget class="QPushButton" name="labelBackgroundColorPushButton">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="0">
+                   <widget class="QLabel" name="labelBackgroundOpacityLabel">
+                    <property name="text">
+                     <string>Background opacity</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="1">
+                   <widget class="QSpinBox" name="labelBackgroundOpacitySpinBox"/>
+                  </item>
+                  <item row="3" column="0">
+                   <widget class="QLabel" name="labelForegroundColorLabel">
+                    <property name="text">
+                     <string>Foreground colour</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="1">
+                   <widget class="QPushButton" name="labelForegroundColorPushButton">
+                    <property name="text">
+                     <string/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="0">
+                   <widget class="QLabel" name="labelForegroundOpacityLabel">
+                    <property name="text">
+                     <string>Foreground opacity</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="1">
+                   <widget class="QSpinBox" name="labelForegroundOpacitySpinBox"/>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="trackStyleTab">
+          <attribute name="title">
+           <string>Track style</string>
+          </attribute>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <widget class="QScrollArea" name="trackScrollArea">
+             <property name="widgetResizable">
+              <bool>true</bool>
+             </property>
+             <widget class="QWidget" name="scrollAreaWidgetContents_2">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>701</width>
+                <height>301</height>
+               </rect>
+              </property>
+              <layout class="QHBoxLayout" name="horizontalLayout_6">
+               <item>
+                <widget class="QTableWidget" name="trackTableWidget"/>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+           </item>
+           <item>
+            <widget class="QGroupBox" name="trackGroupBox_2">
+             <property name="title">
+              <string>Track size</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_7">
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <item row="2" column="0">
+               <widget class="QLabel" name="trackWidthLabel">
+                <property name="text">
+                 <string>Track width</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="0">
+               <widget class="QLabel" name="trackGapLabel">
+                <property name="text">
+                 <string>Track gap</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="2">
+               <widget class="QLineEdit" name="trackWidthLineEdit"/>
+              </item>
+              <item row="3" column="2">
+               <widget class="QLineEdit" name="trackGapLineEdit"/>
+              </item>
+              <item row="2" column="1">
+               <spacer name="trackHorizontalSpacer">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>266</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="1" column="0">
+               <widget class="QCheckBox" name="trackApplyAllCheckBox">
+                <property name="text">
+                 <string>Apply to all</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="4">
+               <widget class="QComboBox" name="trackGapUnitsComboBox"/>
+              </item>
+              <item row="2" column="4">
+               <widget class="QComboBox" name="trackWidthUnitsComboBox"/>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="curveStyleTab">
+          <attribute name="title">
+           <string>Curve style</string>
+          </attribute>
+          <layout class="QVBoxLayout" name="verticalLayout_8">
+           <item>
+            <widget class="QScrollArea" name="curveScrollArea">
+             <property name="widgetResizable">
+              <bool>true</bool>
+             </property>
+             <widget class="QWidget" name="curveAreaWidget">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>701</width>
+                <height>415</height>
+               </rect>
+              </property>
+              <layout class="QHBoxLayout" name="horizontalLayout_5">
+               <item>
+                <widget class="QTableWidget" name="curveTableWidget"/>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="dataTab">
+      <attribute name="title">
+       <string>Data table</string>
+      </attribute>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QScrollArea" name="dataScrollArea">
+         <property name="widgetResizable">
+          <bool>true</bool>
+         </property>
+         <widget class="QWidget" name="dataScrollAreaWidgetContents">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>717</width>
+            <height>453</height>
+           </rect>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <widget class="QTableWidget" name="dataTableWidget"/>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Apply|QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>Dialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>Dialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
