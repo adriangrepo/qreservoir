@@ -11,3 +11,4 @@ logfile.log
 logging_old.conf
 parser.out
 parsetab.out
+*.pyc
