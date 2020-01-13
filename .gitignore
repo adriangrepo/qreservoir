@@ -4,6 +4,7 @@ plot/
 RemoteSystemsTempFiles/
 !statics/types/logtype_example.py
 !statics/types/tests/logtype_test.py
+!statics/.gitignore
 statics/
 totaldepth/
 .metadata.tar.gz
