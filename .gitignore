@@ -2,9 +2,9 @@
 petrophysics/
 plot/
 RemoteSystemsTempFiles/
-statics/
 !*/statics/types/logtype_example.py
 !*/statics/types/logtype_test.py
+statics/
 totaldepth/
 .metadata.tar.gz
 .project
