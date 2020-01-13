@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 class WellBoreConstants(object):
-    #  TODO Alpha C finalise these rd constants
+    #  TODO Alpha C finalise these constants
     MIN_WELL_STEP = 1.0000000000000001E-05
     MIN_TVD_STEP = 0.15240000000000001
     MIN_TWT_STEP = 2
